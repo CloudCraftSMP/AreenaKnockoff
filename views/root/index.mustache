@@ -19,45 +19,14 @@
         </div>
         <!--<img style="width: 100%;" class="show-lg" src="https://i.ytimg.com/vi/5JKKYSpyzGI/maxresdefault.jpg">-->
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/ajBb0qIchNU/maxresdefault.jpg">
-        <span class="show-title">June 2021 Election Results</span>
+    {{#videos.recommended}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/NZtZdmzcWg0/maxresdefault.jpg">
-        <span class="show-title">January 2022 Showcase</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-</div>
-
-<div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/Kny4cozr3YA/maxresdefault.jpg">
-        <span class="show-title">Iceland Update</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/5JKKYSpyzGI/maxresdefault.jpg">
-        <span class="show-title">Yet Another Ceremony 2020</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/sPnv3OnOnhQ/maxresdefault.jpg">
-        <span class="show-title">Birthday Montage 2019</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/YERG1sosph0/maxresdefault.jpg">
-        <span class="show-title">"new cc staff group" Adventures</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.recommended}}
 </div>
 
 <div class="row" style="margin-top: 70px;">
@@ -71,30 +40,14 @@
 </div>
 
 <div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/NZtZdmzcWg0/maxresdefault.jpg">
-        <span class="show-title">January 2022 Showcase</span>
+    {{#videos.showcases}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/BRGP24S7LnE/maxresdefault.jpg">
-        <span class="show-title">July 2021 Showcase</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/kyJ1368IEpM/maxresdefault.jpg">
-        <span class="show-title">May 2021 Showcase</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/ADd_qBLkXgE/maxresdefault.jpg">
-        <span class="show-title">April 2021 Showcase</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.showcases}}
 </div>
 
 <div class="row" style="margin-top: 70px;">
@@ -108,30 +61,14 @@
 </div>
 
 <div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/Kny4cozr3YA/maxresdefault.jpg">
-        <span class="show-title">Iceland Update</span>
+    {{#videos.announcements}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/i4fmobQfo1I/maxresdefault.jpg">
-        <span class="show-title">7/4/2021 Broadcast</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/s934clzMNBI/maxresdefault.jpg">
-        <span class="show-title">4/2/2021 Broadcast</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/jEnNN0lzCuA/maxresdefault.jpg">
-        <span class="show-title">23/1/2021 Broadcast</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.announcements}}
 </div>
 
 <div class="row" style="margin-top: 70px;">
@@ -145,30 +82,14 @@
 </div>
 
 <div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/dH_ECCWm4Tc/maxresdefault.jpg">
-        <span class="show-title">Ári að orsdá 2021</span>
+    {{#videos.events}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/ruLLWVkIOpc/maxresdefault.jpg">
-        <span class="show-title">Tivoli Interval (200-day Party)</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/qqNyzHY9GeM/maxresdefault.jpg">
-        <span class="show-title">Themepark Interval (100-day Party)</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/5JKKYSpyzGI/maxresdefault.jpg">
-        <span class="show-title">Yet Another Ceremony 2020</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.events}}
 </div>
 
 <div class="row" style="margin-top: 70px;">
@@ -182,30 +103,14 @@
 </div>
 
 <div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.imgur.com/Zd3GgJl.png">
-        <span class="show-title">Ári að Orsdá 2022</span>
+    {{#videos.anniversaries}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/dH_ECCWm4Tc/maxresdefault.jpg">
-        <span class="show-title">Ári að Orsdá 2021</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/5JKKYSpyzGI/maxresdefault.jpg">
-        <span class="show-title">Yet Another Ceremony 2020</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/sPnv3OnOnhQ/maxresdefault.jpg">
-        <span class="show-title">Birthday Montage 2019</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.anniversaries}}
 </div>
 
 <div class="row" style="margin-top: 70px;">
@@ -219,24 +124,14 @@
 </div>
 
 <div class="row g-2">
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/p6UFzVcHP-c/maxresdefault.jpg">
-        <span class="show-title">March 2022 Election Results</span>
+    {{#videos.elections}}
+    <div class="col-md-3 col-sm-6 show" onclick="window.location.href = `/0-{{contentDetails.videoId}}`">
+        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/{{contentDetails.videoId}}/maxresdefault.jpg">
+        <span class="show-title">{{snippet.title}}</span>
         <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
+        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">{{contentDetails.date}} {{contentDetails.time}}</span></p>
     </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/qdInWScKcGE/maxresdefault.jpg">
-        <span class="show-title">August 2021 Election Results</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
-    <div class="col-md-3 col-sm-6 show">
-        <img style="width: 100%;" class="show" src="https://i.ytimg.com/vi/ajBb0qIchNU/maxresdefault.jpg">
-        <span class="show-title">June 2021 Election Results</span>
-        <p class="show-desc">Ut tortor magna convallis sit amet vestibulum ac blandit vel sem</p>
-        <p class="show-time">1 H 58 MIN <span style="margin-left: 10px;">LA 16.4. KLO 21.01</span></p>
-    </div>
+    {{/videos.elections}}
 </div>
 
 <style>
@@ -252,7 +147,6 @@
     img.show-lg {
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
-        margin-bottom: 8px;
     }
     div.show {
         cursor: pointer;
@@ -276,7 +170,6 @@
         background-image: url("https://i.ytimg.com/vi/dH_ECCWm4Tc/maxresdefault.jpg");
         background: linear-gradient(to bottom, rgba(0,0,0,0) 60%,rgba(0, 0, 0, 0.6) 90%), url("https://i.ytimg.com/vi/dH_ECCWm4Tc/maxresdefault.jpg");
         aspect-ratio: 1280 / 720;
-        margin-bottom: 8px;
         background-size: cover;
         transition: opacity 0.2s ease-in-out;
         display: flex;
